@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Audio Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="audio-player">
+        <audio id="audio" src="audio/13. Out For Love.mp3"></audio>
+        <div class="track-info">
+            <span id="track-name">Track Name</span>
+        </div>
+        <div class="controls">
+            <button id="rewind">
+                <svg width="24" height="24" viewBox="0 0 24 24"><path d="M11 18V6l-8.5 6L11 18zm9.5-6L13 6v12l7.5-6z"/></svg>
+            </button>
+            <button id="play-pause">
+                <svg id="play-icon" width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                <svg id="pause-icon" width="24" height="24" viewBox="0 0 24 24" style="display: none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+            </button>
+            <button id="fast-forward">
+                <svg width="24" height="24" viewBox="0 0 24 24"><path d="M13 6v12l8.5-6L13 6zm-9.5 6L11 18V6L3.5 12z"/></svg>
+            </button>
+        </div>
+        <div class="seek-volume-wrapper">
+            <div class="time-display">
+                <span id="current-time">00:00</span>
+                <span id="duration">00:00</span>
+            </div>
+            <input type="range" id="seek-bar" value="0">
+            <div class="volume-display">
+                <span id="volume-display">100%</span>
+                <input type="range" id="volume-slider" max="100">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

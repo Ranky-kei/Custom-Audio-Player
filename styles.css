@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.audio-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 500px; /* Increased width */
+}
+
+.track-info {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button svg {
+    fill: #fff;
+}
+
+.seek-volume-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+}
+
+.time-display {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin: 0;
+}
+
+#volume-slider {
+    width: 100px; /* Adjust as needed */
+}
+
+.volume-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#current-time, #duration, #volume-display {
+    font-size: 14px;
+}
