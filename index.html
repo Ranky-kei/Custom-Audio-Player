@@ -7,33 +7,60 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header class="site-header">
+        <div class="left-nav">
+            <span class="site-name">My Audio Player</span>
+            <button class="nav-button">Home</button>
+            <button class="nav-button">About</button>
+        </div>
+        <div class="right-nav">
+            <button class="nav-button">Sign in</button>
+            <button class="nav-button">Sign up</button>
+        </div>
+    </header>
     <div class="audio-player">
-        <audio id="audio" src="audio/13. Out For Love.mp3"></audio>
+        <audio id="audio" preload="auto"></audio>
         <div class="track-info">
             <span id="track-name">Track Name</span>
         </div>
         <div class="controls">
-            <button id="rewind">
-                <svg width="24" height="24" viewBox="0 0 24 24"><path d="M11 18V6l-8.5 6L11 18zm9.5-6L13 6v12l7.5-6z"/></svg>
+            <button id="shuffle-button">
+                <svg width="24" height="24" viewBox="0 0 24 24"><path d=""/></svg>
+            </button>
+            <button id="prev-track-button">
+                <svg width="24" height="24" viewBox="0 0 24 24"><path d=""/></svg>
+            </button>
+            <button id="rewind-button">
+                <svg width="24" height="24" viewBox="0 0 24 24"><path d="M11 18V6l-8.5 6 8.5 6zm1-6l8.5 6V6l-8.5 6z"/></svg>
             </button>
             <button id="play-pause">
                 <svg id="play-icon" width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                <svg id="loading-animation" width="24" height="24" stroke="#fff" viewBox="0 0 24 24" style="display: none;"><style>.spinner_V8m1{transform-origin:center;animation:spinner_zKoa 2s linear infinite}.spinner_V8m1 circle{stroke-linecap:round;animation:spinner_YpZS 1.5s ease-in-out infinite}@keyframes spinner_zKoa{100%{transform:rotate(360deg)}}@keyframes spinner_YpZS{0%{stroke-dasharray:0 150;stroke-dashoffset:0}47.5%{stroke-dasharray:42 150;stroke-dashoffset:-16}95%,100%{stroke-dasharray:42 150;stroke-dashoffset:-59}}</style><g class="spinner_V8m1"><circle cx="12" cy="12" r="9.5" fill="none" stroke-width="3"></circle></g></svg>
                 <svg id="pause-icon" width="24" height="24" viewBox="0 0 24 24" style="display: none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
             </button>
-            <button id="fast-forward">
-                <svg width="24" height="24" viewBox="0 0 24 24"><path d="M13 6v12l8.5-6L13 6zm-9.5 6L11 18V6L3.5 12z"/></svg>
+            <button id="forward-button">
+                <svg width="24" height="24" viewBox="0 0 24 24"><path d="M13 6v12l8.5-6-8.5-6zm-1 6L3.5 6v12l8.5-6z"/></svg>
+            </button>
+            <button id="next-track-button">
+                <svg width="24" height="24" viewBox="0 0 24 24"><path d=""/></svg>
+            </button>
+            <button id="repeat-button">
+                <svg width="24" height="24" viewBox="0 0 24 24"><path d=""/></svg>
             </button>
         </div>
         <div class="seek-volume-wrapper">
             <div class="time-display">
-                <span id="current-time">00:00</span>
+                <span id="current-time">0:00</span>
                 <span id="duration">00:00</span>
             </div>
             <input type="range" id="seek-bar" value="0">
             <div class="volume-display">
-                <span id="volume-display">100%</span>
+                <span id="volume-display"></span>
                 <input type="range" id="volume-slider" max="100">
             </div>
+        </div>
+        <div class="track-queue">
+            <ul id="queue-list"></ul>
         </div>
     </div>
     <script src="script.js"></script>
