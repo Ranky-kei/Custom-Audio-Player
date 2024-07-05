@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", function() {
         { name: "ユノのアトリエ", src: "audio/ミツキヨ (Mitsukiyo) - ユメの喫茶店/04. ユノのアトリエ.flac" },
         { name: "YU.ME.NO!", src: "audio/ミツキヨ (Mitsukiyo) - ユメの喫茶店/05. YU.ME.NO!.flac" },
         { name: "昼下がりのメリエンダ", src: "audio/ミツキヨ (Mitsukiyo) - ユメの喫茶店/06. 昼下がりのメリエンダ.flac" },
-        { name: "雨の日トロイメライ", src: "audio/ミツキヨ (Mitsukiyo) - ユメの喫茶店/07. 雨の日トロイメライ.flac" },
         { name: "スノーヘルツ", src: "audio/ミツキヨ (Mitsukiyo) - ユメの喫茶店/08. スノーヘルツ.flac" },
         { name: "Our home", src: "audio/ミツキヨ (Mitsukiyo) - ユメの喫茶店/09. Our home.flac" },
         { name: "トロイメ・ダイアリー feat. ユノ (CV- 白咲べる)", src: "audio/ミツキヨ (Mitsukiyo) - ユメの喫茶店/10. トロイメ・ダイアリー feat. ユノ (CV- 白咲べる).flac" }
